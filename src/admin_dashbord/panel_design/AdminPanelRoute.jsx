@@ -28,8 +28,7 @@ const DoctorAdminPanel = () => {
     { name: "Investigations / Reports", path: "/doctor/admin/investigations", icon: <ClipboardDocumentCheckIcon className="h-5 w-5" /> },
     { name: "Discharge Summary", path: "/doctor/admin/discharge-summary", icon: <DocumentTextIcon className="h-5 w-5" /> },
     { name: "Doctor + Staff Access", path: "/doctor/admin/staff-access", icon: <UsersIcon className="h-5 w-5" /> },
-       { name: "Sharing", path: "/doctor/admin/sharing", icon: <ShareIcon className="h-5 w-5" /> },
-    { name: "Settings", path: "/doctor/admin/settings", icon: <Cog6ToothIcon className="h-5 w-5" /> }
+         { name: "Settings", path: "/doctor/admin/settings", icon: <Cog6ToothIcon className="h-5 w-5" /> }
   ];
 
   const active = menu.find(m => location.pathname.startsWith(m.path))?.name || "Dashboard";

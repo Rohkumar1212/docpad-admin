@@ -1,8 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import HomeRoute from "./pages/home/HomeRoute";
-import AboutRoute from "./pages/about/AboutRoute";
 import Signup from "./pages/auth/Signup";
 import Login from "./pages/auth/Login";
 
@@ -17,7 +15,7 @@ import Investigations from "./admin_dashbord/Investigations";
 import DischargeSummary from "./admin_dashbord/DischargeSummary";
 import StaffAccess from "./admin_dashbord/StaffAccess";
 import Settings from "./admin_dashbord/Settings";
-import Sharing from "./admin_dashbord/sharing";
+
 
 export default function AppRoute() {
   return (
@@ -45,7 +43,7 @@ export default function AppRoute() {
           <Route path="discharge-summary" element={<DischargeSummary />} />
           <Route path="staff-access" element={<StaffAccess />} />
           <Route path="settings" element={<Settings />} />
-          <Route path="sharing" element={<Sharing />} />
+    
 
           {/* DEFAULT */}
           <Route index element={<Dashboard />} />
